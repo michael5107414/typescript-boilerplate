@@ -1,0 +1,10 @@
+## file extensions
+*.*
+!*.js
+!*.mjs
+!*.ts
+!*.mts
+
+coverage/
+dist/
+node_modules/

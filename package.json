@@ -1,0 +1,42 @@
+{
+  "name": "typescript-boilerplate",
+  "version": "1.0.0",
+  "author": "Michael Chien",
+  "license": "UNLICENSED",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=18.18.0 <19.0.0 || >=20.4.0"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "build": "tsc",
+    "build:release": "yarn clean && tsc -p tsconfig.release.json",
+    "clean": "rimraf dist coverage",
+    "lint": "concurrently -s \"all\" \"eslint --cache\" \"tsc --noEmit\" \"prettier --check .\"",
+    "fix": "eslint --cache --fix && prettier --write .",
+    "test": "jest --config=jest.config.mjs"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/eslint-parser": "^7.24.7",
+    "@babel/plugin-proposal-explicit-resource-management": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.9",
+    "concurrently": "^8.2.2",
+    "eslint": "^9.6.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.8.0",
+    "husky": "^9.0.11",
+    "jest": "30.0.0-alpha.5",
+    "prettier": "^3.3.2",
+    "rimraf": "^5.0.8",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.0.0-alpha.39"
+  },
+  "resolutions": {
+    "glob": "^10.0.0"
+  }
+}
