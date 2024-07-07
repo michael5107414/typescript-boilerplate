@@ -12,10 +12,12 @@
     "prepare": "husky",
     "build": "tsc",
     "build:release": "yarn clean && tsc -p tsconfig.release.json",
+    "dev": "yarn build && node dist/index.js",
     "clean": "rimraf dist coverage",
     "lint": "concurrently -s \"all\" \"eslint --cache\" \"tsc --noEmit\" \"prettier --check .\"",
     "fix": "eslint --cache --fix && prettier --write .",
-    "test": "jest --config=jest.config.mjs"
+    "test": "jest --config=jest.config.mjs",
+    "coverage": "jest --coverage --config=jest.config.mjs"
   },
   "devDependencies": {
     "@babel/core": "^7.24.7",
