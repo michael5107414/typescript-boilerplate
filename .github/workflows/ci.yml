@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  lint:
+    name: Lint Files
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: latest
+
+      - name: Install Pacakges
+        run: yarn install --frozen-lockfile --no-progress
+
+      - name: Running Lint
+        run: yarn lint
+
+  test:
+    name: Test Files
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [22.x, 20.x, "20.9", 18.x, "18.18"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install Packages
+        run: yarn install --frozen-lockfile --no-progress
+
+      - name: Running Test
+        run: yarn test

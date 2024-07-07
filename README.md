@@ -43,9 +43,9 @@ yarn dev
 
 ## Additional Details
 
-Since this boilerplate supports the resource management feature introduced in TypeScript 5.2, the Node.js version should be 18.18 or higher, or 20.4 or higher.
+Since this boilerplate supports the resource management feature introduced in TypeScript 5.2 and uses ESLint v9.6, the Node.js version should be `^18.18 || ^20.9 || >=21.1`
 
 [ts-badge]: https://img.shields.io/badge/TypeScript-5.5-blue.svg
 [typescript-5-5]: https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/
-[nodejs-badge]: https://img.shields.io/badge/Node.js->=%2018.18%20<19%20||%20>=20.4-blue.svg
+[nodejs-badge]: https://img.shields.io/badge/Node.js-^18.18%20||%20^20.9%20||%20>=21.1-blue.svg
 [nodejs]: https://nodejs.org/dist/latest-v20.x/docs/api/

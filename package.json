@@ -6,7 +6,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "engines": {
-    "node": ">=18.18.0 <19.0.0 || >=20.4.0"
+    "node": "^18.18 || ^20.9 || >=21.1"
   },
   "scripts": {
     "prepare": "husky",
