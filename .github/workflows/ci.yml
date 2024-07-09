@@ -16,8 +16,11 @@ jobs:
         with:
           node-version: latest
 
+      - name: Enable Corepack
+        run: corepack enable
+
       - name: Install Pacakges
-        run: yarn install --frozen-lockfile --no-progress
+        run: yarn install --immutable
 
       - name: Running Lint
         run: yarn lint
@@ -35,8 +38,11 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
+      - name: Enable Corepack
+        run: corepack enable
+
       - name: Install Packages
-        run: yarn install --frozen-lockfile --no-progress
+        run: yarn install --immutable
 
       - name: Running Test
         run: yarn test

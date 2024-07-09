@@ -19,7 +19,8 @@ cd typescript-boilerplate
 2. Install dependencies
 
 ```sh
-yarn install
+corepack enable
+yarn install // Press Y to download Yarn 4.3.1 if you have not installed it
 ```
 
 3. Write your code in the `src` folder

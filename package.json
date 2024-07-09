@@ -8,6 +8,7 @@
   "engines": {
     "node": "^18.18 || ^20.9 || >=21.1"
   },
+  "packageManager": "yarn@4.3.1",
   "scripts": {
     "prepare": "husky",
     "build": "tsc",
@@ -36,7 +37,7 @@
     "prettier": "^3.3.2",
     "rimraf": "^5.0.8",
     "typescript": "^5.5.3",
-    "typescript-eslint": "^8.0.0-alpha.39"
+    "typescript-eslint": "^8.0.0-alpha.41"
   },
   "resolutions": {
     "glob": "^10.0.0"
