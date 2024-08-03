@@ -1,7 +1,7 @@
-import { TestClass } from "../src/index";
+import { TestClass } from '../src/index';
 
-describe("TestClass", () => {
-  test("RAII", () => {
+describe('TestClass', () => {
+  test('RAII', () => {
     const a = new TestClass();
     a.RAII();
     expect(a.status).toBe(true);

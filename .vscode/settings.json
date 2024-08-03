@@ -14,13 +14,10 @@
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
+  "[javascript][typescript][json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "prettier.enableDebugLogs": true,
   "typescript.suggest.completeJSDocs": true,
-  "javascript.suggest.completeJSDocs": true,
+  "javascript.suggest.completeJSDocs": true
 }

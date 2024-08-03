@@ -2,9 +2,9 @@
 
 export default {
   verbose: true,
-  testEnvironment: "node",
-  testMatch: ["<rootDir>/__tests__/**/*.test.[jt]s"],
-  collectCoverageFrom: ["<rootDir>/src/**/*.{ts,js}"],
-  coverageProvider: "v8",
-  coverageDirectory: "coverage",
+  testEnvironment: 'node',
+  testMatch: ['<rootDir>/__tests__/**/*.test.[jt]s'],
+  collectCoverageFrom: ['<rootDir>/src/**/*.{ts,js}'],
+  coverageProvider: 'v8',
+  coverageDirectory: 'coverage',
 };

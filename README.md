@@ -26,10 +26,10 @@ yarn install // Press Y to download Yarn 4.3.1 if you have not installed it
 3. Write your code in the `src` folder
 
 4. Execute the code you've just written
+
 ```sh
 yarn dev
 ```
-
 
 ### Scripts
 

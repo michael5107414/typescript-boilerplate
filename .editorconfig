@@ -5,6 +5,9 @@ trim_trailing_whitespace = true
 charset = utf-8
 max_line_length = 120
 
-[*.{js,ts,json}]
+[*.{js,mjs,ts,json}]
 indent_style = space
 indent_size = 2
+
+[*.{js,mjs,ts}]
+quote_type = single

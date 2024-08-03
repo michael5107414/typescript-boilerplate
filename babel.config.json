@@ -10,7 +10,5 @@
     ],
     "@babel/preset-typescript"
   ],
-  "plugins": [
-    "@babel/plugin-proposal-explicit-resource-management"
-  ]
+  "plugins": ["@babel/plugin-proposal-explicit-resource-management"]
 }
